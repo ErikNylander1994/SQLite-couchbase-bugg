@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3CAD58C2D01ABD5003EBA18 /* SQLite_couchbase_buggApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD58B2D01ABD5003EBA18 /* SQLite_couchbase_buggApp.swift */; };
+		D3CAD58E2D01ABD5003EBA18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD58D2D01ABD5003EBA18 /* ContentView.swift */; };
+		D3CAD5902D01ABD7003EBA18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3CAD58F2D01ABD7003EBA18 /* Assets.xcassets */; };
+		D3CAD5942D01ABD7003EBA18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3CAD5932D01ABD7003EBA18 /* Preview Assets.xcassets */; };
+		D3CAD5BC2D01AD97003EBA18 /* Authorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD59B2D01AD97003EBA18 /* Authorizer.swift */; };
+		D3CAD5BD2D01AD97003EBA18 /* Backup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD59C2D01AD97003EBA18 /* Backup.swift */; };
+		D3CAD5BE2D01AD97003EBA18 /* Busy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD59D2D01AD97003EBA18 /* Busy.swift */; };
+		D3CAD5BF2D01AD97003EBA18 /* Checkpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD59E2D01AD97003EBA18 /* Checkpoint.swift */; };
+		D3CAD5C02D01AD97003EBA18 /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD59F2D01AD97003EBA18 /* Collation.swift */; };
+		D3CAD5C12D01AD97003EBA18 /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD5A02D01AD97003EBA18 /* Function.swift */; };
+		D3CAD5C22D01AD97003EBA18 /* Hook.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD5A12D01AD97003EBA18 /* Hook.swift */; };
+		D3CAD5C32D01AD97003EBA18 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD5A22D01AD97003EBA18 /* Query.swift */; };
+		D3CAD5C42D01AD97003EBA18 /* Trace.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD5A32D01AD97003EBA18 /* Trace.swift */; };
+		D3CAD5C52D01AD97003EBA18 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD5A42D01AD97003EBA18 /* Transaction.swift */; };
+		D3CAD5C62D01AD97003EBA18 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD5A62D01AD97003EBA18 /* Connection.swift */; };
+		D3CAD5C72D01AD97003EBA18 /* ConnectionPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD5A72D01AD97003EBA18 /* ConnectionPool.swift */; };
+		D3CAD5C82D01AD97003EBA18 /* ConnectionQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD5A82D01AD97003EBA18 /* ConnectionQueue.swift */; };
+		D3CAD5C92D01AD97003EBA18 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD5A92D01AD97003EBA18 /* Statement.swift */; };
+		D3CAD5CA2D01AD97003EBA18 /* Migrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD5AB2D01AD97003EBA18 /* Migrator.swift */; };
+		D3CAD5CB2D01AD97003EBA18 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD5AC2D01AD97003EBA18 /* Database.swift */; };
+		D3CAD5CC2D01AD97003EBA18 /* StorageLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD5AD2D01AD97003EBA18 /* StorageLocation.swift */; };
+		D3CAD5CD2D01AD97003EBA18 /* TableLockPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD5AE2D01AD97003EBA18 /* TableLockPolicy.swift */; };
+		D3CAD5CE2D01AD97003EBA18 /* ExpressibleByRowError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD5B02D01AD97003EBA18 /* ExpressibleByRowError.swift */; };
+		D3CAD5CF2D01AD97003EBA18 /* SQLiteError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD5B12D01AD97003EBA18 /* SQLiteError.swift */; };
+		D3CAD5D02D01AD97003EBA18 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD5B32D01AD97003EBA18 /* StringExtension.swift */; };
+		D3CAD5D12D01AD97003EBA18 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD5B52D01AD97003EBA18 /* Row.swift */; };
+		D3CAD5D22D01AD97003EBA18 /* SQBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD5B62D01AD97003EBA18 /* SQBinding.swift */; };
+		D3CAD5D32D01AD97003EBA18 /* LICENCE in Resources */ = {isa = PBXBuildFile; fileRef = D3CAD5BA2D01AD97003EBA18 /* LICENCE */; };
+		D3CAD5D52D01B05E003EBA18 /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD5D42D01B05E003EBA18 /* SQLiteDB.swift */; };
+		D3CAD5F32D01EE57003EBA18 /* CouchbaseLiteSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CAD5EF2D01E040003EBA18 /* CouchbaseLiteSwift.xcframework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D3CAD5882D01ABD5003EBA18 /* SQLite-couchbase-bugg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SQLite-couchbase-bugg.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3CAD58B2D01ABD5003EBA18 /* SQLite_couchbase_buggApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLite_couchbase_buggApp.swift; sourceTree = "<group>"; };
+		D3CAD58D2D01ABD5003EBA18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D3CAD58F2D01ABD7003EBA18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3CAD5912D01ABD7003EBA18 /* SQLite_couchbase_bugg.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SQLite_couchbase_bugg.entitlements; sourceTree = "<group>"; };
+		D3CAD5932D01ABD7003EBA18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D3CAD59B2D01AD97003EBA18 /* Authorizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authorizer.swift; sourceTree = "<group>"; };
+		D3CAD59C2D01AD97003EBA18 /* Backup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Backup.swift; sourceTree = "<group>"; };
+		D3CAD59D2D01AD97003EBA18 /* Busy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Busy.swift; sourceTree = "<group>"; };
+		D3CAD59E2D01AD97003EBA18 /* Checkpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkpoint.swift; sourceTree = "<group>"; };
+		D3CAD59F2D01AD97003EBA18 /* Collation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collation.swift; sourceTree = "<group>"; };
+		D3CAD5A02D01AD97003EBA18 /* Function.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
+		D3CAD5A12D01AD97003EBA18 /* Hook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hook.swift; sourceTree = "<group>"; };
+		D3CAD5A22D01AD97003EBA18 /* Query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		D3CAD5A32D01AD97003EBA18 /* Trace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trace.swift; sourceTree = "<group>"; };
+		D3CAD5A42D01AD97003EBA18 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		D3CAD5A62D01AD97003EBA18 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		D3CAD5A72D01AD97003EBA18 /* ConnectionPool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionPool.swift; sourceTree = "<group>"; };
+		D3CAD5A82D01AD97003EBA18 /* ConnectionQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionQueue.swift; sourceTree = "<group>"; };
+		D3CAD5A92D01AD97003EBA18 /* Statement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statement.swift; sourceTree = "<group>"; };
+		D3CAD5AB2D01AD97003EBA18 /* Migrator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Migrator.swift; sourceTree = "<group>"; };
+		D3CAD5AC2D01AD97003EBA18 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		D3CAD5AD2D01AD97003EBA18 /* StorageLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageLocation.swift; sourceTree = "<group>"; };
+		D3CAD5AE2D01AD97003EBA18 /* TableLockPolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableLockPolicy.swift; sourceTree = "<group>"; };
+		D3CAD5B02D01AD97003EBA18 /* ExpressibleByRowError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressibleByRowError.swift; sourceTree = "<group>"; };
+		D3CAD5B12D01AD97003EBA18 /* SQLiteError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteError.swift; sourceTree = "<group>"; };
+		D3CAD5B32D01AD97003EBA18 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		D3CAD5B52D01AD97003EBA18 /* Row.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
+		D3CAD5B62D01AD97003EBA18 /* SQBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQBinding.swift; sourceTree = "<group>"; };
+		D3CAD5B82D01AD97003EBA18 /* SQift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQift.h; sourceTree = "<group>"; };
+		D3CAD5BA2D01AD97003EBA18 /* LICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE; sourceTree = "<group>"; };
+		D3CAD5D42D01B05E003EBA18 /* SQLiteDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
+		D3CAD5EF2D01E040003EBA18 /* CouchbaseLiteSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CouchbaseLiteSwift.xcframework; sourceTree = "<group>"; };
+		D3CAD5F22D01E8C4003EBA18 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3CAD5852D01ABD5003EBA18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3CAD5F32D01EE57003EBA18 /* CouchbaseLiteSwift.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3CAD57F2D01ABD5003EBA18 = {
+			isa = PBXGroup;
+			children = (
+				D3CAD5F22D01E8C4003EBA18 /* README.md */,
+				D3CAD58A2D01ABD5003EBA18 /* SQLite-couchbase-bugg */,
+				D3CAD59A2D01ACD9003EBA18 /* Frameworks */,
+				D3CAD5892D01ABD5003EBA18 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3CAD5892D01ABD5003EBA18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3CAD5882D01ABD5003EBA18 /* SQLite-couchbase-bugg.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3CAD58A2D01ABD5003EBA18 /* SQLite-couchbase-bugg */ = {
+			isa = PBXGroup;
+			children = (
+				D3CAD5BB2D01AD97003EBA18 /* Sqift */,
+				D3CAD58B2D01ABD5003EBA18 /* SQLite_couchbase_buggApp.swift */,
+				D3CAD58D2D01ABD5003EBA18 /* ContentView.swift */,
+				D3CAD5D42D01B05E003EBA18 /* SQLiteDB.swift */,
+				D3CAD58F2D01ABD7003EBA18 /* Assets.xcassets */,
+				D3CAD5912D01ABD7003EBA18 /* SQLite_couchbase_bugg.entitlements */,
+				D3CAD5922D01ABD7003EBA18 /* Preview Content */,
+			);
+			path = "SQLite-couchbase-bugg";
+			sourceTree = "<group>";
+		};
+		D3CAD5922D01ABD7003EBA18 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D3CAD5932D01ABD7003EBA18 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D3CAD59A2D01ACD9003EBA18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3CAD5EF2D01E040003EBA18 /* CouchbaseLiteSwift.xcframework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3CAD5A52D01AD97003EBA18 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				D3CAD59B2D01AD97003EBA18 /* Authorizer.swift */,
+				D3CAD59C2D01AD97003EBA18 /* Backup.swift */,
+				D3CAD59D2D01AD97003EBA18 /* Busy.swift */,
+				D3CAD59E2D01AD97003EBA18 /* Checkpoint.swift */,
+				D3CAD59F2D01AD97003EBA18 /* Collation.swift */,
+				D3CAD5A02D01AD97003EBA18 /* Function.swift */,
+				D3CAD5A12D01AD97003EBA18 /* Hook.swift */,
+				D3CAD5A22D01AD97003EBA18 /* Query.swift */,
+				D3CAD5A32D01AD97003EBA18 /* Trace.swift */,
+				D3CAD5A42D01AD97003EBA18 /* Transaction.swift */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
+		D3CAD5AA2D01AD97003EBA18 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				D3CAD5A52D01AD97003EBA18 /* Functions */,
+				D3CAD5A62D01AD97003EBA18 /* Connection.swift */,
+				D3CAD5A72D01AD97003EBA18 /* ConnectionPool.swift */,
+				D3CAD5A82D01AD97003EBA18 /* ConnectionQueue.swift */,
+				D3CAD5A92D01AD97003EBA18 /* Statement.swift */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		D3CAD5AF2D01AD97003EBA18 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				D3CAD5AB2D01AD97003EBA18 /* Migrator.swift */,
+				D3CAD5AC2D01AD97003EBA18 /* Database.swift */,
+				D3CAD5AD2D01AD97003EBA18 /* StorageLocation.swift */,
+				D3CAD5AE2D01AD97003EBA18 /* TableLockPolicy.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		D3CAD5B22D01AD97003EBA18 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				D3CAD5B02D01AD97003EBA18 /* ExpressibleByRowError.swift */,
+				D3CAD5B12D01AD97003EBA18 /* SQLiteError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		D3CAD5B42D01AD97003EBA18 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D3CAD5B32D01AD97003EBA18 /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D3CAD5B72D01AD97003EBA18 /* Row */ = {
+			isa = PBXGroup;
+			children = (
+				D3CAD5B52D01AD97003EBA18 /* Row.swift */,
+				D3CAD5B62D01AD97003EBA18 /* SQBinding.swift */,
+			);
+			path = Row;
+			sourceTree = "<group>";
+		};
+		D3CAD5B92D01AD97003EBA18 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3CAD5B82D01AD97003EBA18 /* SQift.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3CAD5BB2D01AD97003EBA18 /* Sqift */ = {
+			isa = PBXGroup;
+			children = (
+				D3CAD5AA2D01AD97003EBA18 /* Connection */,
+				D3CAD5AF2D01AD97003EBA18 /* Database */,
+				D3CAD5B22D01AD97003EBA18 /* Errors */,
+				D3CAD5B42D01AD97003EBA18 /* Extensions */,
+				D3CAD5B72D01AD97003EBA18 /* Row */,
+				D3CAD5B92D01AD97003EBA18 /* Supporting Files */,
+				D3CAD5BA2D01AD97003EBA18 /* LICENCE */,
+			);
+			path = Sqift;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3CAD5872D01ABD5003EBA18 /* SQLite-couchbase-bugg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3CAD5972D01ABD7003EBA18 /* Build configuration list for PBXNativeTarget "SQLite-couchbase-bugg" */;
+			buildPhases = (
+				D3CAD5842D01ABD5003EBA18 /* Sources */,
+				D3CAD5852D01ABD5003EBA18 /* Frameworks */,
+				D3CAD5862D01ABD5003EBA18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SQLite-couchbase-bugg";
+			productName = "SQLite-couchbase-bugg";
+			productReference = D3CAD5882D01ABD5003EBA18 /* SQLite-couchbase-bugg.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3CAD5802D01ABD5003EBA18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					D3CAD5872D01ABD5003EBA18 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = D3CAD5832D01ABD5003EBA18 /* Build configuration list for PBXProject "SQLite-couchbase-bugg" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3CAD57F2D01ABD5003EBA18;
+			productRefGroup = D3CAD5892D01ABD5003EBA18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3CAD5872D01ABD5003EBA18 /* SQLite-couchbase-bugg */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3CAD5862D01ABD5003EBA18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3CAD5D32D01AD97003EBA18 /* LICENCE in Resources */,
+				D3CAD5942D01ABD7003EBA18 /* Preview Assets.xcassets in Resources */,
+				D3CAD5902D01ABD7003EBA18 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3CAD5842D01ABD5003EBA18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3CAD5CA2D01AD97003EBA18 /* Migrator.swift in Sources */,
+				D3CAD5CD2D01AD97003EBA18 /* TableLockPolicy.swift in Sources */,
+				D3CAD5C62D01AD97003EBA18 /* Connection.swift in Sources */,
+				D3CAD5CB2D01AD97003EBA18 /* Database.swift in Sources */,
+				D3CAD5D12D01AD97003EBA18 /* Row.swift in Sources */,
+				D3CAD5C32D01AD97003EBA18 /* Query.swift in Sources */,
+				D3CAD5BE2D01AD97003EBA18 /* Busy.swift in Sources */,
+				D3CAD5C52D01AD97003EBA18 /* Transaction.swift in Sources */,
+				D3CAD58E2D01ABD5003EBA18 /* ContentView.swift in Sources */,
+				D3CAD5C02D01AD97003EBA18 /* Collation.swift in Sources */,
+				D3CAD5BD2D01AD97003EBA18 /* Backup.swift in Sources */,
+				D3CAD5CE2D01AD97003EBA18 /* ExpressibleByRowError.swift in Sources */,
+				D3CAD5C22D01AD97003EBA18 /* Hook.swift in Sources */,
+				D3CAD5C42D01AD97003EBA18 /* Trace.swift in Sources */,
+				D3CAD5C82D01AD97003EBA18 /* ConnectionQueue.swift in Sources */,
+				D3CAD5C72D01AD97003EBA18 /* ConnectionPool.swift in Sources */,
+				D3CAD5D22D01AD97003EBA18 /* SQBinding.swift in Sources */,
+				D3CAD5CC2D01AD97003EBA18 /* StorageLocation.swift in Sources */,
+				D3CAD5BC2D01AD97003EBA18 /* Authorizer.swift in Sources */,
+				D3CAD58C2D01ABD5003EBA18 /* SQLite_couchbase_buggApp.swift in Sources */,
+				D3CAD5BF2D01AD97003EBA18 /* Checkpoint.swift in Sources */,
+				D3CAD5D52D01B05E003EBA18 /* SQLiteDB.swift in Sources */,
+				D3CAD5C12D01AD97003EBA18 /* Function.swift in Sources */,
+				D3CAD5CF2D01AD97003EBA18 /* SQLiteError.swift in Sources */,
+				D3CAD5D02D01AD97003EBA18 /* StringExtension.swift in Sources */,
+				D3CAD5C92D01AD97003EBA18 /* Statement.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D3CAD5952D01ABD7003EBA18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3CAD5962D01ABD7003EBA18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		D3CAD5982D01ABD7003EBA18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SQLite-couchbase-bugg/SQLite_couchbase_bugg.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SQLite-couchbase-bugg/Preview Content\"";
+				DEVELOPMENT_TEAM = 9S8K6KP6H8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "erik.nylander.SQLite-couchbase-bugg";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3CAD5992D01ABD7003EBA18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SQLite-couchbase-bugg/SQLite_couchbase_bugg.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SQLite-couchbase-bugg/Preview Content\"";
+				DEVELOPMENT_TEAM = 9S8K6KP6H8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "erik.nylander.SQLite-couchbase-bugg";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3CAD5832D01ABD5003EBA18 /* Build configuration list for PBXProject "SQLite-couchbase-bugg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3CAD5952D01ABD7003EBA18 /* Debug */,
+				D3CAD5962D01ABD7003EBA18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3CAD5972D01ABD7003EBA18 /* Build configuration list for PBXNativeTarget "SQLite-couchbase-bugg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3CAD5982D01ABD7003EBA18 /* Debug */,
+				D3CAD5992D01ABD7003EBA18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3CAD5802D01ABD5003EBA18 /* Project object */;
+}

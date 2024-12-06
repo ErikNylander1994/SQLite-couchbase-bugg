@@ -12,6 +12,7 @@ In this simple swiftui project, i create a SQLite database, insert some json dat
 
 See the following: 
 https://github.com/ErikNylander1994/SQLite-couchbase-bugg/blob/main/SQLite-couchbase-bugg/SQLite_couchbase_buggApp.swift
+
 https://github.com/ErikNylander1994/SQLite-couchbase-bugg/blob/main/SQLite-couchbase-bugg/SQLiteDB.swift
 
 When removing CouchbaseLiteSwift from "Link Binary With Libraries" the json_extract works as expected.

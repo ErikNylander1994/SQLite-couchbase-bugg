@@ -10,7 +10,8 @@ Error from SQLite: {
 ```
 In this simple swiftui project, i create a SQLite database, insert some json data into a column and then try to fetch it using json_extract.
 
-See the following: 
+See the following:
+
 https://github.com/ErikNylander1994/SQLite-couchbase-bugg/blob/main/SQLite-couchbase-bugg/SQLite_couchbase_buggApp.swift
 
 https://github.com/ErikNylander1994/SQLite-couchbase-bugg/blob/main/SQLite-couchbase-bugg/SQLiteDB.swift

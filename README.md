@@ -9,8 +9,11 @@ Error from SQLite: {
 }
 ```
 In this simple swiftui project, i create a SQLite database, insert some json data into a column and then try to fetch it using json_extract.
-When removing CouchbaseLiteSwift from "Link Binary With Libraries" the json_extract works as expected.
+See the following: 
+https://github.com/ErikNylander1994/SQLite-couchbase-bugg/blob/main/SQLite-couchbase-bugg/SQLite_couchbase_buggApp.swift
+https://github.com/ErikNylander1994/SQLite-couchbase-bugg/blob/main/SQLite-couchbase-bugg/SQLiteDB.swift
 
+When removing CouchbaseLiteSwift from "Link Binary With Libraries" the json_extract works as expected.
 
 Tested with Xcode 15.4 on iOS 18.0 device and simulator.
 

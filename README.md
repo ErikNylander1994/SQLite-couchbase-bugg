@@ -8,7 +8,7 @@ Error from SQLite: {
     codeDescription="SQL logic error" 
 }
 ```
-In this simple swiftui project, i create a SQLite database, insert some json data and then try to fetch it using json_extract.
+In this simple swiftui project, i create a SQLite database, insert some json data into a column and then try to fetch it using json_extract.
 When removing CouchbaseLiteSwift from "Link Binary With Libraries" the json_extract works as expected.
 
 
